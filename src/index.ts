@@ -26,10 +26,22 @@ import * as Games from "./modules/games";
 import * as Players from "./modules/players";
 import * as Tells from "./modules/tells";
 
+interface IEventContainer {
+    core: EE<Core.IEvents>;
+    channels: EE<Channels.IEvents>;
+    players: EE<Players.IEvents>;
+    tells: EE<Tells.IEvents>;
+}
+
 type Resolver = (arg: any) => void;
 
 export class Typevine {
-    public events: EE<Core.IEvents> = new EE<Core.IEvents>();
+    public events: IEventContainer = {
+        channels: new EE(),
+        core: new EE(),
+        players: new EE(),
+        tells: new EE(),
+    };
     private clientID: string = "";
     private clientSecret: string = "";
     private socket: WebSocket;
@@ -67,6 +79,103 @@ export class Typevine {
             },
         });
     }
+    public heartbeat(players?: string[]): void {
+        this.sendToVine({
+            event: "heartbeat",
+            payload: {
+                players,
+            },
+        });
+    }
+    public async unsubscribe(channel: string): Promise<Core.IResult> {
+        return this.sendWithRef({
+            event: "channels/unsubscribe",
+            payload: {
+                channel,
+            },
+        });
+    }
+    public async signIn(name: string): Promise<Core.IResult> {
+        return this.sendWithRef({
+            event: "players/sign-in",
+            payload: {
+                name,
+            },
+        });
+    }
+    public async signOut(name: string): Promise<Core.IResult> {
+        return this.sendWithRef({
+            event: "players/sign-out",
+            payload: {
+                name,
+            },
+        });
+    }
+    public playerStatus(): void {
+        this.sendWithRef({
+            event: "players/status",
+        });
+    }
+    public async gameStatus(
+        game: string,
+    ): Promise<Core.IResult<Games.IStatus>> {
+        return this.sendWithRef({
+            event: "games/status",
+            payload: {
+                game,
+            },
+        });
+    }
+    public async send(
+        from: string,
+        to: string,
+        game: string,
+        message: string,
+    ): Promise<Core.IResult> {
+        return this.sendWithRef({
+            event: "tells/send",
+            payload: {
+                from_name: from,
+                message,
+                sent_at: new Date().toISOString(),
+                to_game: game,
+                to_name: to,
+            },
+        });
+    }
+    public async syncAchievements(): Promise<
+        Core.IResult<Achievements.IAchievementResponse[]>
+    > {
+        return this.sendWithRef({
+            event: "achievements/sync",
+        });
+    }
+    public async createAchievement(
+        achievement: Achievements.IAchievementCreate,
+    ): Promise<Achievements.IResult> {
+        return this.sendWithRef({
+            event: "achievements/create",
+            payload: achievement,
+        });
+    }
+    public async updateAchievement(
+        update: Achievements.IAchievementUpdate,
+    ): Promise<Achievements.IResult> {
+        return this.sendWithRef({
+            event: "achievements/update",
+            payload: update,
+        });
+    }
+    public async deleteAchievement(
+        key: string,
+    ): Promise<Achievements.IResultDelete> {
+        return this.sendWithRef({
+            event: "achievements/delete",
+            payload: {
+                key,
+            },
+        });
+    }
     private sendToVine(data: IObjectAny): boolean {
         if (this.socket.readyState === 1) {
             // Good to send (READYSTATE OPEN)
@@ -96,6 +205,7 @@ export class Typevine {
                 this.eventCache[event] = undefined;
                 resolve(arg as T);
             };
+            this.sendToVine(data);
         });
     }
 }

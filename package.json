@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Grapevine Integration for Node",
     "main": "dist/index.js",
+    "types": "src/index.ts",
     "scripts": {
         "start": "tsc && node .",
         "build": "tsc",

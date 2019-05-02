@@ -9,3 +9,8 @@ export interface IStatus {
     game: string;
     players: string[];
 }
+
+export interface IEvents {
+    signIn(payload: ISignIn): void;
+    signOut(payload: ISignOut): void;
+}

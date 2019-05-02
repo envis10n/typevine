@@ -5,3 +5,13 @@ export interface IBroadcast {
     game: string;
     name: string;
 }
+
+export interface IMessage {
+    channel: string;
+    name: string;
+    message: string;
+}
+
+export interface IEvents {
+    broadcast(payload: IBroadcast): void;
+}

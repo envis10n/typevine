@@ -16,3 +16,8 @@ export interface IStatus {
     supports: string[];
     players_online_count: number;
 }
+
+export interface IEvents {
+    connect(game: string): void;
+    disconnect(game: string): void;
+}
