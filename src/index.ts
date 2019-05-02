@@ -45,8 +45,6 @@ export class Typevine {
         players: new EE(),
         tells: new EE(),
     };
-    private clientID: string = "";
-    private clientSecret: string = "";
     private socket: WebSocket | null = null;
     private channels: string[] = [];
     private eventCache: { [key: string]: Resolver } = {};
@@ -68,8 +66,8 @@ export class Typevine {
     ): Promise<Core.IAuthResult> {
         return this.waitEvent("authenticate", {
             channels: this.channels,
-            client_id: this.clientID,
-            client_secret: this.clientSecret,
+            client_id: id,
+            client_secret: secret,
             supports: this.supports,
             user_agent: this.userAgent,
             version: this.version,
