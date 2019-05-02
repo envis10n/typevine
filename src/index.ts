@@ -286,6 +286,8 @@ export class Typevine {
             } else {
                 return false;
             }
+        } else {
+            return false;
         }
     }
     private async sendWithRef<T>(data: IObjectAny): Promise<T> {
