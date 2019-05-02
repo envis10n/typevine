@@ -17,6 +17,7 @@
 import { EventEmitter as EE } from "ee-ts";
 import { v4 } from "uuid";
 import WebSocket from "ws";
+import { parseAs } from "./lib/json";
 
 // Grapevine Modules
 import * as Achievements from "./modules/achievements";
@@ -31,6 +32,7 @@ interface IEventContainer {
     channels: EE<Channels.IEvents>;
     players: EE<Players.IEvents>;
     tells: EE<Tells.IEvents>;
+    games: EE<Games.IEvents>;
 }
 
 type Resolver = (arg: any) => void;
@@ -39,6 +41,7 @@ export class Typevine {
     public events: IEventContainer = {
         channels: new EE(),
         core: new EE(),
+        games: new EE(),
         players: new EE(),
         tells: new EE(),
     };
@@ -48,12 +51,13 @@ export class Typevine {
     private channels: string[] = [];
     private eventCache: { [key: string]: Resolver } = {};
     private refCache: Map<string, Resolver> = new Map();
+    private restart?: number;
     constructor(
         private supports: string[],
         public readonly userAgent: string = "Typevine 0.0.1-dev",
         public readonly version: string = "2.3.0",
     ) {
-        this.socket = new WebSocket("wss://grapevine.haus/socket");
+        this.setupSocket();
     }
     public setChannels(channels: string[]): void {
         this.channels = channels;
@@ -174,6 +178,98 @@ export class Typevine {
             payload: {
                 key,
             },
+        });
+    }
+    private async setupSocket(): Promise<void> {
+        this.socket = new WebSocket("wss://grapevine.haus/socket");
+        this.socket.on("close", (code, reason) => {
+            this.events.core.emit("disconnected");
+            if (this.restart !== undefined) {
+                setTimeout(this.setupSocket, this.restart + 20 * 1000);
+            }
+        });
+        this.socket.on("open", () => {
+            if (this.restart !== undefined) {
+                this.restart = undefined;
+            }
+            this.events.core.emit("connected");
+        });
+        this.socket.on("message", (data) => {
+            if (typeof data !== "string") {
+                data = data.toString();
+            }
+            try {
+                const dobj: Core.IPacket = parseAs(data);
+                if (dobj.ref !== undefined) {
+                    const resolver = this.refCache.get(dobj.ref);
+                    if (resolver !== undefined) {
+                        resolver(dobj);
+                        return;
+                    }
+                }
+                const event = dobj.event.split("/");
+                const mod = event[0];
+                const modevent = event[1];
+                switch (mod) {
+                    case "channels":
+                        switch (modevent) {
+                            case "broadcast":
+                                this.events.channels.emit(
+                                    "broadcast",
+                                    (dobj as any).payload as Channels.IBroadcast,
+                                );
+                                break;
+                        }
+                        break;
+                    case "players":
+                        switch (modevent) {
+                            case "sign-in":
+                                this.events.players.emit("signIn", (dobj as any)
+                                    .payload as Players.ISignIn);
+                                break;
+                            case "sign-out":
+                                this.events.players.emit(
+                                    "signOut",
+                                    (dobj as any).payload as Players.ISignOut,
+                                );
+                                break;
+                            case "status":
+                                this.events.players.emit("status", (dobj as any)
+                                    .payload as Players.IStatus);
+                                break;
+                        }
+                        break;
+                    case "tells":
+                        switch (modevent) {
+                            case "receive":
+                                this.events.tells.emit("receive", (dobj as any)
+                                    .payload as Tells.ITellReceive);
+                                break;
+                        }
+                        break;
+                    case "games":
+                        switch (modevent) {
+                            case "connect":
+                            case "disconnect":
+                                this.events.games.emit(
+                                    modevent,
+                                    (dobj as any).payload.game,
+                                );
+                                break;
+                        }
+                        break;
+                    case "heartbeat":
+                        this.events.core.emit("heartbeat");
+                        break;
+                    case "restart":
+                        this.events.core.emit("restart", (dobj as any).payload
+                            .duration as number);
+                        this.restart = (dobj as any).payload.duration as number;
+                        break;
+                }
+            } catch (e) {
+                //
+            }
         });
     }
     private sendToVine(data: IObjectAny): boolean {

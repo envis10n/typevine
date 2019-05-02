@@ -6,14 +6,18 @@ export interface IResult<T = undefined> {
     error?: string;
 }
 
+export interface IPacket {
+    event: string;
+    ref?: string;
+}
+
 export type IAuthResult = IResult<{ unicode: string; version: string }>;
 
 export interface IEvents {
     heartbeat(): void;
     restart(downtime: number): void;
-    broadcast(): void;
-    gameConnect(game: string): void;
-    gameDisconnect(game: string): void;
+    disconnected(): void;
+    connected(): void;
 }
 export interface IAuthenticate {
     client_id: string;

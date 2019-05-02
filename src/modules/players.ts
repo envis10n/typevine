@@ -13,4 +13,5 @@ export interface IStatus {
 export interface IEvents {
     signIn(payload: ISignIn): void;
     signOut(payload: ISignOut): void;
+    status(payload: IStatus): void;
 }
