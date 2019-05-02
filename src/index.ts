@@ -47,7 +47,7 @@ export class Typevine {
     };
     private clientID: string = "";
     private clientSecret: string = "";
-    private socket: WebSocket;
+    private socket: WebSocket | null = null;
     private channels: string[] = [];
     private eventCache: { [key: string]: Resolver } = {};
     private refCache: Map<string, Resolver> = new Map();
@@ -278,12 +278,14 @@ export class Typevine {
         });
     }
     private sendToVine(data: IObjectAny): boolean {
-        if (this.socket.readyState === 1) {
-            // Good to send (READYSTATE OPEN)
-            this.socket.send(JSON.stringify(data));
-            return true;
-        } else {
-            return false;
+        if (this.socket !== null) {
+            if (this.socket.readyState === 1) {
+                // Good to send (READYSTATE OPEN)
+                this.socket.send(JSON.stringify(data));
+                return true;
+            } else {
+                return false;
+            }
         }
     }
     private async sendWithRef<T>(data: IObjectAny): Promise<T> {
@@ -303,7 +305,7 @@ export class Typevine {
     private waitEvent<T>(event: string, data: object): Promise<T> {
         return new Promise((resolve, reject) => {
             this.eventCache[event] = (arg) => {
-                this.eventCache[event] = undefined;
+                delete this.eventCache[event];
                 resolve(arg as T);
             };
             this.sendToVine(data);
