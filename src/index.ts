@@ -209,6 +209,11 @@ export class Typevine {
                 }
                 const event = dobj.event.split("/");
                 const mod = event[0];
+                const evCall = this.eventCache[mod];
+                if (evCall !== undefined) {
+                    evCall(dobj as any);
+                    return;
+                }
                 const modevent = event[1];
                 switch (mod) {
                     case "channels":
