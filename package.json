@@ -1,0 +1,26 @@
+{
+    "name": "typevine",
+    "version": "1.0.0",
+    "description": "Grapevine Integration for Node",
+    "main": "dist/index.js",
+    "scripts": {
+        "start": "tsc && node .",
+        "build": "tsc",
+        "docs": "typedoc ./src"
+    },
+    "author": "envis10n",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/uuid": "^3.4.4",
+        "@types/ws": "^6.0.1",
+        "tslint": "^5.16.0",
+        "typescript": "^3.4.5"
+    },
+    "dependencies": {
+        "@types/node": "^11.13.8",
+        "ee-ts": "^1.0.1",
+        "typedoc": "^0.14.2",
+        "uuid": "^3.3.2",
+        "ws": "^7.0.0"
+    }
+}
