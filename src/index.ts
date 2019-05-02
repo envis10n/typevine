@@ -303,6 +303,7 @@ export class Typevine {
         });
     }
     private waitEvent<T>(event: string, data: object): Promise<T> {
+        data = { event, payload: data };
         return new Promise((resolve, reject) => {
             this.eventCache[event] = (arg) => {
                 delete this.eventCache[event];
