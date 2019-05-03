@@ -1,3 +1,5 @@
+import { GrapevineError } from "..";
+
 export interface IResult<T = undefined> {
     event: string;
     ref?: string;
@@ -16,7 +18,7 @@ export type IAuthResult = IResult<{ unicode: string; version: string }>;
 export interface IEvents {
     heartbeat(): void;
     restart(downtime: number): void;
-    disconnected(): void;
+    disconnected(error?: { code: number; reason: string }): void;
     connected(): void;
 }
 export interface IAuthenticate {

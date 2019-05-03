@@ -27,6 +27,11 @@ import * as Games from "./modules/games";
 import * as Players from "./modules/players";
 import * as Tells from "./modules/tells";
 
+export enum GrapevineError {
+    AUTHENTICATION_FAILED = 4000,
+    HEARTBEAT_FAILED = 4001,
+}
+
 interface IEventContainer {
     core: EE<Core.IEvents>;
     channels: EE<Channels.IEvents>;
@@ -181,7 +186,19 @@ export class Typevine {
     private async setupSocket(): Promise<void> {
         this.socket = new WebSocket("wss://grapevine.haus/socket");
         this.socket.on("close", (code, reason) => {
-            this.events.core.emit("disconnected");
+            if (code === GrapevineError.AUTHENTICATION_FAILED) {
+                this.events.core.emit("disconnected", {
+                    code,
+                    reason: "Authentication failure.",
+                });
+            } else if (code === GrapevineError.HEARTBEAT_FAILED) {
+                this.events.core.emit("disconnected", {
+                    code,
+                    reason: "Heartbeat failure.",
+                });
+            } else {
+                this.events.core.emit("disconnected");
+            }
             if (this.restart !== undefined) {
                 setTimeout(this.setupSocket, this.restart + 20 * 1000);
             }
