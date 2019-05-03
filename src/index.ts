@@ -133,6 +133,20 @@ export class Typevine {
             },
         });
     }
+    public broadcast(
+        channel: string,
+        name: string,
+        message: string,
+    ): Promise<Core.IResult> {
+        return this.sendWithRef({
+            event: "channels/send",
+            payload: {
+                channel,
+                message,
+                name,
+            },
+        });
+    }
     public async send(
         from: string,
         to: string,
