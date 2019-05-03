@@ -2,4 +2,4 @@
 
 TypeScript Grapevine integration for Node.js
 
-### WIP PLEASE DO NOT USE YET
+Docs located at https://envis10n.github.io/typevine/
