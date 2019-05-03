@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IBroadcast | typevine</title>
+	<title>IEventContainer | typevine</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="ibroadcast.html">IBroadcast</a>
+					<a href="ieventcontainer.html">IEventContainer</a>
 				</li>
 			</ul>
-			<h1>Interface IBroadcast</h1>
+			<h1>Interface IEventContainer</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IBroadcast</span>
+						<span class="target">IEventContainer</span>
 					</li>
 				</ul>
 			</section>
@@ -78,68 +78,68 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibroadcast.html#channel" class="tsd-kind-icon">channel</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibroadcast.html#game" class="tsd-kind-icon">game</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibroadcast.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibroadcast.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibroadcast.html#ref" class="tsd-kind-icon">ref</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="ieventcontainer.html#channels" class="tsd-kind-icon">channels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="ieventcontainer.html#core" class="tsd-kind-icon">core</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="ieventcontainer.html#games" class="tsd-kind-icon">games</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="ieventcontainer.html#players" class="tsd-kind-icon">players</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="ieventcontainer.html#tells" class="tsd-kind-icon">tells</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="channel" class="tsd-anchor"></a>
-					<h3>channel</h3>
-					<div class="tsd-signature tsd-kind-icon">channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="channels" class="tsd-anchor"></a>
+					<h3>channels</h3>
+					<div class="tsd-signature tsd-kind-icon">channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EE</span><span class="tsd-signature-symbol">&lt;</span><a href="ievents.html" class="tsd-signature-type">IEvents</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/channels.ts#L3">modules/channels.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L37">index.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="game" class="tsd-anchor"></a>
-					<h3>game</h3>
-					<div class="tsd-signature tsd-kind-icon">game<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="core" class="tsd-anchor"></a>
+					<h3>core</h3>
+					<div class="tsd-signature tsd-kind-icon">core<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EE</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IEvents</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/channels.ts#L5">modules/channels.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L36">index.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="games" class="tsd-anchor"></a>
+					<h3>games</h3>
+					<div class="tsd-signature tsd-kind-icon">games<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EE</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IEvents</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/channels.ts#L4">modules/channels.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L40">index.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="players" class="tsd-anchor"></a>
+					<h3>players</h3>
+					<div class="tsd-signature tsd-kind-icon">players<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EE</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IEvents</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/channels.ts#L6">modules/channels.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L38">index.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="ref" class="tsd-anchor"></a>
-					<h3>ref</h3>
-					<div class="tsd-signature tsd-kind-icon">ref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="tells" class="tsd-anchor"></a>
+					<h3>tells</h3>
+					<div class="tsd-signature tsd-kind-icon">tells<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EE</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IEvents</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/channels.ts#L2">modules/channels.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L39">index.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,36 +176,36 @@
 					<li class=" tsd-kind-interface">
 						<a href="iauthenticate.html" class="tsd-kind-icon">IAuthenticate</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ibroadcast.html" class="tsd-kind-icon">IBroadcast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iconnect.html" class="tsd-kind-icon">IConnect</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="ibroadcast.html" class="tsd-kind-icon">IBroadcast</a>
+					<li class="current tsd-kind-interface tsd-is-not-exported">
+						<a href="ieventcontainer.html" class="tsd-kind-icon">IEvent<wbr>Container</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ibroadcast.html#channel" class="tsd-kind-icon">channel</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="ieventcontainer.html#channels" class="tsd-kind-icon">channels</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ibroadcast.html#game" class="tsd-kind-icon">game</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="ieventcontainer.html#core" class="tsd-kind-icon">core</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ibroadcast.html#message" class="tsd-kind-icon">message</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="ieventcontainer.html#games" class="tsd-kind-icon">games</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ibroadcast.html#name" class="tsd-kind-icon">name</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="ieventcontainer.html#players" class="tsd-kind-icon">players</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ibroadcast.html#ref" class="tsd-kind-icon">ref</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="ieventcontainer.html#tells" class="tsd-kind-icon">tells</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="iconnect.html" class="tsd-kind-icon">IConnect</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="ieventcontainer.html" class="tsd-kind-icon">IEvent<wbr>Container</a>
-					</li>
 					<li class=" tsd-kind-interface">
 						<a href="ievents.html" class="tsd-kind-icon">IEvents</a>
 					</li>

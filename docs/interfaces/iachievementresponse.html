@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ITell | typevine</title>
+	<title>IAchievementResponse | typevine</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="itell.html">ITell</a>
+					<a href="iachievementresponse.html">IAchievementResponse</a>
 				</li>
 			</ul>
-			<h1>Interface ITell</h1>
+			<h1>Interface IAchievementResponse</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ITell</span>
+						<a href="iachievement.html" class="tsd-signature-type">IAchievement</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">IAchievementResponse</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -81,12 +86,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itell.html#from_game" class="tsd-kind-icon">from_<wbr>game</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itell.html#from_name" class="tsd-kind-icon">from_<wbr>name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itell.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itell.html#ref" class="tsd-kind-icon">ref</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itell.html#sent_at" class="tsd-kind-icon">sent_<wbr>at</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itell.html#to_name" class="tsd-kind-icon">to_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iachievementresponse.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iachievementresponse.html#display" class="tsd-kind-icon">display</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iachievementresponse.html#errors" class="tsd-kind-icon">errors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iachievementresponse.html#key" class="tsd-kind-icon">key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iachievementresponse.html#partial_progress" class="tsd-kind-icon">partial_<wbr>progress</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iachievementresponse.html#points" class="tsd-kind-icon">points</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iachievementresponse.html#title" class="tsd-kind-icon">title</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iachievementresponse.html#total_progress" class="tsd-kind-icon">total_<wbr>progress</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,63 +101,97 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="from_game" class="tsd-anchor"></a>
-					<h3>from_<wbr>game</h3>
-					<div class="tsd-signature tsd-kind-icon">from_<wbr>game<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="iachievement.html">IAchievement</a>.<a href="iachievement.html#description">description</a></p>
 						<ul>
-							<li>Defined in modules/tells.ts:3</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/achievements.ts#L3">modules/achievements.ts:3</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="display" class="tsd-anchor"></a>
+					<h3>display</h3>
+					<div class="tsd-signature tsd-kind-icon">display<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="iachievement.html">IAchievement</a>.<a href="iachievement.html#display">display</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/achievements.ts#L5">modules/achievements.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="from_name" class="tsd-anchor"></a>
-					<h3>from_<wbr>name</h3>
-					<div class="tsd-signature tsd-kind-icon">from_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="errors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> errors</h3>
+					<div class="tsd-signature tsd-kind-icon">errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in modules/tells.ts:4</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/achievements.ts#L32">modules/achievements.ts:32</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="key" class="tsd-anchor"></a>
+					<h3>key</h3>
+					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/achievements.ts#L31">modules/achievements.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="partial_progress" class="tsd-anchor"></a>
+					<h3>partial_<wbr>progress</h3>
+					<div class="tsd-signature tsd-kind-icon">partial_<wbr>progress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="iachievement.html">IAchievement</a>.<a href="iachievement.html#partial_progress">partial_progress</a></p>
 						<ul>
-							<li>Defined in modules/tells.ts:7</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/achievements.ts#L6">modules/achievements.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="ref" class="tsd-anchor"></a>
-					<h3>ref</h3>
-					<div class="tsd-signature tsd-kind-icon">ref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="points" class="tsd-anchor"></a>
+					<h3>points</h3>
+					<div class="tsd-signature tsd-kind-icon">points<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="iachievement.html">IAchievement</a>.<a href="iachievement.html#points">points</a></p>
 						<ul>
-							<li>Defined in modules/tells.ts:2</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/achievements.ts#L4">modules/achievements.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sent_at" class="tsd-anchor"></a>
-					<h3>sent_<wbr>at</h3>
-					<div class="tsd-signature tsd-kind-icon">sent_<wbr>at<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="title" class="tsd-anchor"></a>
+					<h3>title</h3>
+					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="iachievement.html">IAchievement</a>.<a href="iachievement.html#title">title</a></p>
 						<ul>
-							<li>Defined in modules/tells.ts:6</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/achievements.ts#L2">modules/achievements.ts:2</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="to_name" class="tsd-anchor"></a>
-					<h3>to_<wbr>name</h3>
-					<div class="tsd-signature tsd-kind-icon">to_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="total_progress" class="tsd-anchor"></a>
+					<h3>total_<wbr>progress</h3>
+					<div class="tsd-signature tsd-kind-icon">total_<wbr>progress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="iachievement.html">IAchievement</a>.<a href="iachievement.html#total_progress">total_progress</a></p>
 						<ul>
-							<li>Defined in modules/tells.ts:5</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/modules/achievements.ts#L7">modules/achievements.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,11 +207,53 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/grapevineerror.html" class="tsd-kind-icon">Grapevine<wbr>Error</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/typevine.html" class="tsd-kind-icon">Typevine</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="iachievement.html" class="tsd-kind-icon">IAchievement</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iachievementcreate.html" class="tsd-kind-icon">IAchievement<wbr>Create</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
+						<a href="iachievementresponse.html" class="tsd-kind-icon">IAchievement<wbr>Response</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iachievementresponse.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iachievementresponse.html#display" class="tsd-kind-icon">display</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iachievementresponse.html#errors" class="tsd-kind-icon">errors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iachievementresponse.html#key" class="tsd-kind-icon">key</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iachievementresponse.html#partial_progress" class="tsd-kind-icon">partial_<wbr>progress</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iachievementresponse.html#points" class="tsd-kind-icon">points</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iachievementresponse.html#title" class="tsd-kind-icon">title</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="iachievementresponse.html#total_progress" class="tsd-kind-icon">total_<wbr>progress</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="iachievementupdate.html" class="tsd-kind-icon">IAchievement<wbr>Update</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="iauthenticate.html" class="tsd-kind-icon">IAuthenticate</a>
@@ -181,11 +264,23 @@
 					<li class=" tsd-kind-interface">
 						<a href="iconnect.html" class="tsd-kind-icon">IConnect</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="ieventcontainer.html" class="tsd-kind-icon">IEvent<wbr>Container</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="ievents.html" class="tsd-kind-icon">IEvents</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="imessage.html" class="tsd-kind-icon">IMessage</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ipacket.html" class="tsd-kind-icon">IPacket</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="iresult.html" class="tsd-kind-icon">IResult</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="iresultdelete.html" class="tsd-kind-icon">IResult<wbr>Delete</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="isignin.html" class="tsd-kind-icon">ISign<wbr>In</a>
@@ -193,33 +288,12 @@
 					<li class=" tsd-kind-interface">
 						<a href="istatus.html" class="tsd-kind-icon">IStatus</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="itell.html" class="tsd-kind-icon">ITell</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="itell.html#from_game" class="tsd-kind-icon">from_<wbr>game</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="itell.html#from_name" class="tsd-kind-icon">from_<wbr>name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="itell.html#message" class="tsd-kind-icon">message</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="itell.html#ref" class="tsd-kind-icon">ref</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="itell.html#sent_at" class="tsd-kind-icon">sent_<wbr>at</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="itell.html#to_name" class="tsd-kind-icon">to_<wbr>name</a>
-							</li>
-						</ul>
+					<li class=" tsd-kind-interface">
+						<a href="itellreceive.html" class="tsd-kind-icon">ITell<wbr>Receive</a>
 					</li>
-				</ul>
-				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="itellsend.html" class="tsd-kind-icon">ITell<wbr>Send</a>
+					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#iauthresult" class="tsd-kind-icon">IAuth<wbr>Result</a>
 					</li>

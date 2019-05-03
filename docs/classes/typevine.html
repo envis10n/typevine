@@ -88,11 +88,9 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typevine.html#channels" class="tsd-kind-icon">channels</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typevine.html#clientid" class="tsd-kind-icon">clientID</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typevine.html#clientsecret" class="tsd-kind-icon">client<wbr>Secret</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typevine.html#eventcache" class="tsd-kind-icon">event<wbr>Cache</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="typevine.html#events" class="tsd-kind-icon">events</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typevine.html#refcache" class="tsd-kind-icon">ref<wbr>Cache</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typevine.html#restart" class="tsd-kind-icon">restart</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typevine.html#socket" class="tsd-kind-icon">socket</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typevine.html#supports" class="tsd-kind-icon">supports</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="typevine.html#useragent" class="tsd-kind-icon">user<wbr>Agent</a></li>
@@ -103,11 +101,29 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#authenticate" class="tsd-kind-icon">authenticate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#createachievement" class="tsd-kind-icon">create<wbr>Achievement</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#deleteachievement" class="tsd-kind-icon">delete<wbr>Achievement</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#gamestatus" class="tsd-kind-icon">game<wbr>Status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#heartbeat" class="tsd-kind-icon">heartbeat</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#playerstatus" class="tsd-kind-icon">player<wbr>Status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#send" class="tsd-kind-icon">send</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typevine.html#sendtovine" class="tsd-kind-icon">send<wbr>ToVine</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private"><a href="typevine.html#sendwithref" class="tsd-kind-icon">send<wbr>With<wbr>Ref</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#setchannels" class="tsd-kind-icon">set<wbr>Channels</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typevine.html#setupsocket" class="tsd-kind-icon">setup<wbr>Socket</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#signin" class="tsd-kind-icon">sign<wbr>In</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#signout" class="tsd-kind-icon">sign<wbr>Out</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#syncachievements" class="tsd-kind-icon">sync<wbr>Achievements</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="typevine.html#updateachievement" class="tsd-kind-icon">update<wbr>Achievement</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private"><a href="typevine.html#waitevent" class="tsd-kind-icon">wait<wbr>Event</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-class"><a href="typevine.html#events" class="tsd-kind-icon">events</a></li>
 							</ul>
 						</section>
 					</div>
@@ -125,7 +141,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:28</li>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L57">index.ts:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -153,27 +169,7 @@
 					<div class="tsd-signature tsd-kind-icon">channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:26</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="clientid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> clientID</h3>
-					<div class="tsd-signature tsd-kind-icon">clientID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in index.ts:23</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="clientsecret" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> client<wbr>Secret</h3>
-					<div class="tsd-signature tsd-kind-icon">client<wbr>Secret<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in index.ts:24</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L54">index.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -183,7 +179,7 @@
 					<div class="tsd-signature tsd-kind-icon">event<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:27</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L55">index.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -195,33 +191,33 @@
 						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="events" class="tsd-anchor"></a>
-					<h3>events</h3>
-					<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EE</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ievents.html" class="tsd-signature-type">IEvents</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EE&lt;Core.IEvents&gt;()</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in index.ts:22</li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="refcache" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> ref<wbr>Cache</h3>
 					<div class="tsd-signature tsd-kind-icon">ref<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../globals.html#resolver" class="tsd-signature-type">Resolver</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:28</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L56">index.ts:56</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="restart" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> restart</h3>
+					<div class="tsd-signature tsd-kind-icon">restart<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L57">index.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="socket" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> socket</h3>
-					<div class="tsd-signature tsd-kind-icon">socket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebSocket</span></div>
+					<div class="tsd-signature tsd-kind-icon">socket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebSocket</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:25</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L53">index.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +227,7 @@
 					<div class="tsd-signature tsd-kind-icon">supports<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:30</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L59">index.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,7 +237,7 @@
 					<div class="tsd-signature tsd-kind-icon">user<wbr>Agent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:31</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L60">index.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:32</li>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L61">index.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -268,7 +264,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:39</li>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L68">index.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -284,6 +280,147 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createachievement" class="tsd-anchor"></a>
+					<h3>create<wbr>Achievement</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Achievement<span class="tsd-signature-symbol">(</span>achievement<span class="tsd-signature-symbol">: </span><a href="../interfaces/iachievementcreate.html" class="tsd-signature-type">IAchievementCreate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iresult.html" class="tsd-signature-type">IResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L160">index.ts:160</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>achievement: <a href="../interfaces/iachievementcreate.html" class="tsd-signature-type">IAchievementCreate</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iresult.html" class="tsd-signature-type">IResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="deleteachievement" class="tsd-anchor"></a>
+					<h3>delete<wbr>Achievement</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Achievement<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iresultdelete.html" class="tsd-signature-type">IResultDelete</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L176">index.ts:176</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iresultdelete.html" class="tsd-signature-type">IResultDelete</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gamestatus" class="tsd-anchor"></a>
+					<h3>game<wbr>Status</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">game<wbr>Status<span class="tsd-signature-symbol">(</span>game<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/istatus.html" class="tsd-signature-type">IStatus</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L126">index.ts:126</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>game: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/istatus.html" class="tsd-signature-type">IStatus</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="heartbeat" class="tsd-anchor"></a>
+					<h3>heartbeat</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">heartbeat<span class="tsd-signature-symbol">(</span>players<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L89">index.ts:89</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> players: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="playerstatus" class="tsd-anchor"></a>
+					<h3>player<wbr>Status</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">player<wbr>Status<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L121">index.ts:121</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="send" class="tsd-anchor"></a>
+					<h3>send</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, game<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L136">index.ts:136</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>game: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>message: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="sendtovine" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> send<wbr>ToVine</h3>
@@ -294,7 +431,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:60</li>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L295">index.ts:295</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -317,7 +454,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:69</li>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L308">index.ts:308</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -346,7 +483,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:36</li>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L65">index.ts:65</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -359,23 +496,149 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="subscribe" class="tsd-anchor"></a>
-					<h3>subscribe</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>channel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iresult.html" class="tsd-signature-type">IResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="setupsocket" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> setup<wbr>Socket</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">setup<wbr>Socket<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:52</li>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L186">index.ts:186</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="signin" class="tsd-anchor"></a>
+					<h3>sign<wbr>In</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">sign<wbr>In<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L105">index.ts:105</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="signout" class="tsd-anchor"></a>
+					<h3>sign<wbr>Out</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">sign<wbr>Out<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L113">index.ts:113</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="subscribe" class="tsd-anchor"></a>
+					<h3>subscribe</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>channel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L81">index.ts:81</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>channel: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="syncachievements" class="tsd-anchor"></a>
+					<h3>sync<wbr>Achievements</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">sync<wbr>Achievements<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iachievementresponse.html" class="tsd-signature-type">IAchievementResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L153">index.ts:153</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iachievementresponse.html" class="tsd-signature-type">IAchievementResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="unsubscribe" class="tsd-anchor"></a>
+					<h3>unsubscribe</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span>channel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L97">index.ts:97</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>channel: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updateachievement" class="tsd-anchor"></a>
+					<h3>update<wbr>Achievement</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Achievement<span class="tsd-signature-symbol">(</span>update<span class="tsd-signature-symbol">: </span><a href="../interfaces/iachievementupdate.html" class="tsd-signature-type">IAchievementUpdate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iresult.html" class="tsd-signature-type">IResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L168">index.ts:168</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>update: <a href="../interfaces/iachievementupdate.html" class="tsd-signature-type">IAchievementUpdate</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iresult.html" class="tsd-signature-type">IResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -392,7 +655,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:83</li>
+									<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L322">index.ts:322</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -415,6 +678,69 @@
 					</ul>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class">
+					<a name="events" class="tsd-anchor"></a>
+					<h3>events</h3>
+					<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L46">index.ts:46</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="events.channels-1" class="tsd-anchor"></a>
+						<h3>channels</h3>
+						<div class="tsd-signature tsd-kind-icon">channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/ievents.html" class="tsd-signature-type">IEvents</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EE()</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L47">index.ts:47</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="events.core" class="tsd-anchor"></a>
+						<h3>core</h3>
+						<div class="tsd-signature tsd-kind-icon">core<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IEvents</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EE()</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L48">index.ts:48</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="events.games" class="tsd-anchor"></a>
+						<h3>games</h3>
+						<div class="tsd-signature tsd-kind-icon">games<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IEvents</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EE()</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L49">index.ts:49</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="events.players" class="tsd-anchor"></a>
+						<h3>players</h3>
+						<div class="tsd-signature tsd-kind-icon">players<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IEvents</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EE()</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L50">index.ts:50</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="events.tells" class="tsd-anchor"></a>
+						<h3>tells</h3>
+						<div class="tsd-signature tsd-kind-icon">tells<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IEvents</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EE()</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/envis10n/typevine/blob/22c18fd/src/index.ts#L51">index.ts:51</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
@@ -426,6 +752,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/grapevineerror.html" class="tsd-kind-icon">Grapevine<wbr>Error</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
@@ -438,19 +767,13 @@
 								<a href="typevine.html#channels" class="tsd-kind-icon">channels</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="typevine.html#clientid" class="tsd-kind-icon">clientID</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="typevine.html#clientsecret" class="tsd-kind-icon">client<wbr>Secret</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="typevine.html#eventcache" class="tsd-kind-icon">event<wbr>Cache</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="typevine.html#events" class="tsd-kind-icon">events</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="typevine.html#refcache" class="tsd-kind-icon">ref<wbr>Cache</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="typevine.html#restart" class="tsd-kind-icon">restart</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="typevine.html#socket" class="tsd-kind-icon">socket</a>
@@ -467,6 +790,24 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="typevine.html#authenticate" class="tsd-kind-icon">authenticate</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#createachievement" class="tsd-kind-icon">create<wbr>Achievement</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#deleteachievement" class="tsd-kind-icon">delete<wbr>Achievement</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#gamestatus" class="tsd-kind-icon">game<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#heartbeat" class="tsd-kind-icon">heartbeat</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#playerstatus" class="tsd-kind-icon">player<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#send" class="tsd-kind-icon">send</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="typevine.html#sendtovine" class="tsd-kind-icon">send<wbr>ToVine</a>
 							</li>
@@ -476,11 +817,32 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="typevine.html#setchannels" class="tsd-kind-icon">set<wbr>Channels</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="typevine.html#setupsocket" class="tsd-kind-icon">setup<wbr>Socket</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#signin" class="tsd-kind-icon">sign<wbr>In</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#signout" class="tsd-kind-icon">sign<wbr>Out</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="typevine.html#subscribe" class="tsd-kind-icon">subscribe</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#syncachievements" class="tsd-kind-icon">sync<wbr>Achievements</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="typevine.html#updateachievement" class="tsd-kind-icon">update<wbr>Achievement</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private">
 								<a href="typevine.html#waitevent" class="tsd-kind-icon">wait<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class">
+								<a href="typevine.html#events" class="tsd-kind-icon">events</a>
 							</li>
 						</ul>
 					</li>
@@ -488,6 +850,15 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iachievement.html" class="tsd-kind-icon">IAchievement</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iachievementcreate.html" class="tsd-kind-icon">IAchievement<wbr>Create</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iachievementresponse.html" class="tsd-kind-icon">IAchievement<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iachievementupdate.html" class="tsd-kind-icon">IAchievement<wbr>Update</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iauthenticate.html" class="tsd-kind-icon">IAuthenticate</a>
@@ -498,11 +869,23 @@
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iconnect.html" class="tsd-kind-icon">IConnect</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="../interfaces/ieventcontainer.html" class="tsd-kind-icon">IEvent<wbr>Container</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/ievents.html" class="tsd-kind-icon">IEvents</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/imessage.html" class="tsd-kind-icon">IMessage</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ipacket.html" class="tsd-kind-icon">IPacket</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="../interfaces/iresult.html" class="tsd-kind-icon">IResult</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iresultdelete.html" class="tsd-kind-icon">IResult<wbr>Delete</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/isignin.html" class="tsd-kind-icon">ISign<wbr>In</a>
@@ -511,7 +894,10 @@
 						<a href="../interfaces/istatus.html" class="tsd-kind-icon">IStatus</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/itell.html" class="tsd-kind-icon">ITell</a>
+						<a href="../interfaces/itellreceive.html" class="tsd-kind-icon">ITell<wbr>Receive</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/itellsend.html" class="tsd-kind-icon">ITell<wbr>Send</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#iauthresult" class="tsd-kind-icon">IAuth<wbr>Result</a>
