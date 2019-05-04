@@ -62,3 +62,7 @@ typings/
 
 # Dist
 dist/
+
+# RPT2
+
+.rpt2_cache/
