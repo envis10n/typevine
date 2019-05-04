@@ -1,16 +1,20 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "module": "commonjs",
+        "module": "es6",
         "outDir": "./dist",
         "rootDir": "./src",
-        "strict": false,
+        "declaration": true,
+        "declarationDir": "./dist",
+        "strict": true,
         "moduleResolution": "node",
         "esModuleInterop": true,
         "noImplicitAny": true,
         "allowJs": false,
         "experimentalDecorators": false
     },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"],
     "typedocOptions": {
         "mode": "file",
         "out": "docs",

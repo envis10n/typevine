@@ -1,0 +1,1 @@
+{"code":"export function parseAs(json) {\r\n    return JSON.parse(json);\r\n}\r\n","references":[],"dts":{"name":"/home/envis10n/Desktop/Repos/typevine/lib/json.d.ts","writeByteOrderMark":false,"text":"export declare function parseAs<T extends {}>(json: string): T;\r\n"}}
